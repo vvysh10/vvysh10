@@ -49,6 +49,8 @@ Algorithm
  lowercase-->chr(ord(str[i]+32)
 if the input string contain digits
 print as it is using logic-->output=output+s1[i]
+update the iterate value......
+
 
 
 
