@@ -75,3 +75,55 @@ print(str2)
         
 
 
+#Write a program to capitalize >
+
+Algorithm
+
+1>read the string at run time
+2>find the length of the string
+3>by iterating till the end of the loop 
+compare the charaters of the string using index values 
+ if the character at index 0 is capital then 
+index 0-->capital-->s2=s2+s1[0]
+index 0--> small-->s2=s2+chr(ord(s[i])-32)
+if s1[i]=' '-->s1[i+1]=capital-->s2=s2+' '
+                               s2=s2+s1[i+1]
+                               i=i+1(otherwise it will print Capital letter and along with small letter)
+if s1[i]=' ' -->s1[i+1]=small-->s2=s2+' '
+               s2=s2+chr(ord(s1[i+1])+32)
+               i=i+1
+if s1[i]>="A" and s1[i]<="Z"
+              s2=s2+chr(ord(s1[i])+32)
+else
+  s2=s2+s1[i]
+  i=i+1
+5>print the output>..
+
+
+#Write a program to captilize the string
+
+s1=input("enter the string")
+s2=" "
+i=0
+l=len(s1)
+while i<l:
+        if i==0 and s1[i]>="a" and s1[i]<="z":
+            s2=s2+chr(ord(s1[i])-32)
+        elif i==0 and s1[i]>="A" and s1[i]<="Z":
+            s2=s2+s1[i]
+        elif s1[i]==' ' and s1[i+1]>='a' and s1[i+1]<='z':
+            s2=s2+' '
+            s2=s2+chr(ord(s1[i+1])-32)
+            i=i+1
+        elif s1[i]==' ' and s1[i+1]>='A' and s1[i+1]<='Z':
+            s2=s2+' '
+            s2=s2+s1[i+1]
+            i=i+1
+        elif s1[i]>='A' and s1[i]<='Z':
+            s2=s2+chr(ord(s1[i])+32)
+        else:
+            s2=s2+s1[i]
+        i=i+1
+print(s1,s2,sep="\n")
+
+
