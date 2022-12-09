@@ -56,7 +56,7 @@ update the iterate value......
 
 
 
-#write a program to swap case from lowe to higher and higher to lower using Index..
+#write a program to swap case from lower to higher and higher to lower using Index..
 str1=input("enter input")
 str2=" "
 l=len(str1)
@@ -81,7 +81,9 @@ Algorithm
 
 1>read the string at run time
 2>find the length of the string
-3>by iterating till the end of the loop 
+3>by iterating till the end of the string
+
+
 compare the charaters of the string using index values 
  if the character at index 0 is capital then 
 index 0-->capital-->s2=s2+s1[0]
@@ -127,3 +129,26 @@ while i<l:
 print(s1,s2,sep="\n")
 
 
+#Count the even and odd number in the list
+
+
+
+step1:start
+step2=intialize the even count and odd count to 0
+step3:Read the value from numberlist using for loop
+step4:Check the condition if num is divible by 2
+step5:if yes,increment the even count by 1 and print the current number
+step6:if No ,increament the Odd count by 1 and print the current number
+step7:stop
+     
+#Count even numbers and numbers exit in the list
+numberList=[1,5,6,4,17,14,21,58,56,3,63,70]
+ec=0
+oc=0
+for num in numberList:
+    if num%2==0:
+        ec=ec+1
+    else:
+        oc=oc+1
+print("Count of even numbers",ec)
+print("Count of odd numbers",oc)
