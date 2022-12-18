@@ -152,3 +152,37 @@ for num in numberList:
         oc=oc+1
 print("Count of even numbers",ec)
 print("Count of odd numbers",oc)
+
+
+#find how many values exit in the list
+
+step1:start
+step2:intilize the values into the list at compile time
+step3:set count value as 0
+step4:read the value in the list using for loop
+step5:increment the count value by 1
+step6:print the count value
+code::
+
+
+l1=[1,2,6,5,8,7,9,4,6,2,45,68,95,26,4]
+c=0
+for i in l1:
+    c=c+1
+print(c)
+
+
+
+#write a program to input n values inside list
+step1:create a empty list
+step2:read the values in the list uding rang datatype
+step3:Take user input into the list
+step4:insert the user input into the list using append function
+step5:print the list on to the output screen
+
+
+list1=[]
+for i in  range(5):
+    value=int(input("enter the value"))
+    list1.append(value)
+print(list1)
