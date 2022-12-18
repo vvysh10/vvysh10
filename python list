@@ -1,0 +1,32 @@
+#write a program to read name,n subject marks,calculate total,avg, print the result
+step1:Accept the input name from user
+step2: initilize the empty list,read the marks into the list using for loop and range function
+step3:insert marks into the list
+step5:make total=0
+step6:add total marks inthe list ,and assign to total
+step7:calcualte the avg marks(total/no.of subjects)
+step8:if marks in subject<40: state fail check using  if condition
+        (here read marks using for loop from the marks list)
+step9:display the output onto the screen
+
+
+name=input("enter student name")
+n=int(input("enter the no. of subjects"))
+marks=[]
+for i in range(n):
+    m=int(input("enter Marks:"))
+    marks.append(m)
+total=0
+for m in marks:
+    total=total+m
+    avg=total/n
+print("name",name)
+print("marks",marks)
+print("total",total)
+print("average",avg)
+result="pass"
+for m in marks:
+    if m<40:
+        result="fail"
+        break
+print("Result:",result)
