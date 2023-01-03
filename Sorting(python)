@@ -1,0 +1,11 @@
+#Write a program to Sort the Elements of the List in ascending Order using Bubble Sort
+l1=[]
+n=int(input("Enter How many Elements"))
+for i in range(n):
+  value=int(input("enter value"))
+  l1.append(value)
+  print("Before Sorting,l1)
+  for i in range(n):
+      for j in range(n-1):
+          l1[j],l1[j+1]=l1[j+1],l1[j]
+  print("After Sorting",l1)
