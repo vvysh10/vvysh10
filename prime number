@@ -6,3 +6,12 @@ for i in range(2,num):
        break
 else:
     print(num,"is prime")
+    
+    
+  #algorithm steps:
+  1.read value at runtime
+  2.read values using for loop in range
+  3.check whether num is divisible by range number:
+  4.if dividible then it is not a prime number
+  break loop using break statement 
+  5.else,it is prime number
