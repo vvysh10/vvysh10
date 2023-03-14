@@ -1,0 +1,30 @@
+#code to demonstrate working of join tuples if similar initial elements using loop
+
+tuples=[("apple", 1), ("apple",2), ("banana",3), ("banana",4),("orange",5)]
+current=[]
+result=[]
+for i in tuples:
+      if i==0:
+         current=[tuple[i]]
+      elif tuples[i][0]==tuples[i-1][0]
+          current.append(tuples[i])
+       else:
+           result.append(tuple(current))
+           current=[tuple[i]]
+   result.append(tuple(current))
+   print(result)
+   
+   
+   Algorithm::
+   
+   1.Initialize an tuple.
+   2.we define an empty list result, will holds the output of the tuples
+   3.we define an empty list current,will holds current working tuples 
+   4.iterate though tuples using for loop with the help of i
+   5.if i==0,then append intial ele of tuple to current by current=[tuples[i]]
+   6.else if tuples[i][0]==tuples[i-1][0],then current.append(tuples[i]) i.e,adding tuple to current
+   7.else result.append(tuple(current)) add current list of tuple to result
+   8.and update current to [tuple[i]]
+   9.and after for loop repeat result.append(tuple(current)) i.e,adding current tuple to result in the form of list
+   10. finally,print the result using print function
+   
