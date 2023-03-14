@@ -1,0 +1,29 @@
+#Remove tuples having duplicate first value from given list of tuples
+
+tuples=[('Tuple1', 121)[0] not in , ('Tuple2', 125), 
+         ('Tuple1', 135), ('Tuple4', 478)]
+result=[]
+seen=set()
+for tuple in tuples:
+  if tuple[0] not in seen:
+         result.append(tuple)
+         seen.add(tuple[0])
+    print(result)
+    
+    
+    
+    Important points:
+    *Set doesnot allow duplicate value
+    *set :'set' object has no attribute 'append'(does not support append instead use add )
+    *set is a unordered collection of elements
+    
+    
+   Algorithm:
+   1)define list of tuples using tuples variable name
+   2)we define an empty list using result which holds the result values
+   3)intilizen seen to set()
+   4)using for loop iterate though the tuples for tuple in tuples
+   5)if tuple[0] not in seen then add tuple to result
+   6)add tuple[0] to seen 
+   7)finally print result using output function
+   
