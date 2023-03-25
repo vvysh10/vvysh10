@@ -1,0 +1,22 @@
+#create a set with some elements return count of values
+
+l1=[10,20,10,30,10,20,40,50,50,40,20,60]
+set1=set(l1)
+l2=list(set1)
+l2.sort()
+for val in l2:
+     c=l1.count(val)
+     print(c,val)
+     
+     
+     
+     
+ALGORITHM::
+1.Assign list of values to variable l1.
+2.converting list into set using set() function to remove duplicates.
+3.again convet set of elements into list and assigning to variable l2.
+4.we cannot use sort function in set. to sort elements 
+5.by using sort() we can arrange elements in acsending order
+6.iterate through the l2 using for loop to read elements
+7.to count the occurance of elements in the list use count() in l1 and assign value to variable c.
+8.finally print the value with no.of occurance
