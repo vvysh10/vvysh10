@@ -1,0 +1,21 @@
+Task::
+The students of District College have subscriptions to English and French newspapers. Some students have subscribed only to English, some have subscribed to only French and some have subscribed to both newspapers.
+
+You are given two sets of student roll numbers. One set has subscribed to the English newspaper, and the other set is subscribed to the French newspaper. The same student could be in both sets. Your task is to find the total number of students who have subscribed to at least one newspaper.
+
+n=int(input())
+set1=set(map(int,input().split()))
+b=int(input())
+set2=set(map(int,input().split()))
+set3=set1.union(set2)
+print(len(set3))
+
+
+
+#Algorithm
+1.Enter no. of students who have subscribed to English and store it in n.
+2.in the second line the input will be read by intput() and convert into integers using map(int,...) to each element
+3.here input would be taken that has taken French subscription which will store in  b.
+4.in the 4th line input has taken using input() function which can be mapped using map(int,...)
+5.Apply union between 2 sets using set operstion (union) and store it in set3
+6.print the length of the set3 using len()
