@@ -1,0 +1,47 @@
+#Application:- Sign-in and Sign-up
+users_dict={}
+while True:
+    print("1.Signup")
+    print("2.Signin")
+    print("3.Exit")
+    opt=int(input("Enter your option"))
+    if opt==1:
+        uname=input("Enter username")
+        pwd=input("Enter password")
+        if uname in users_dict:
+            print(uname,"Exists")
+        else:
+            users_dict[uname]=pwd
+        print("user registered")
+    elif opt==2:
+        uname=input("Enter username")
+        pwd=input("Enter password")
+        if uname in users_dict:
+            p=users_dict[uname]
+            if pwd==p:
+                print(uname,"Welcome")
+            else:
+                print("Invalid password")
+        else:
+            print(uname,"Invalid username")
+    elif opt==3:
+        break
+
+
+    
+#Algorithm:
+1.create a users_dictionary to store user credentionals
+2.state an infinite loop using while True statement
+3.Display the menu showing options 1.sign up,2.sign in 3.Exit using print function 
+4.Take input from user and store it in opt variable as int after converting into the integer 
+5.check if opt==1 then take username ,password from user and store in uname,pwd variables respectively.
+6.check if username exists in users_dict,if it does then print username already exists otherwise add the value by using key_value pair in users_dict
+and print the message to confirm that user is registred
+7.check if the user enters opt==2,then ask user to enter his credentionals like username and password store it in uname ,pwd variables respectively
+8.check if username is exists in users_dict using in operator ,if it does retrive the password from dictionary using p=users_dict[name] and store it in a variable p ,ask user to enter his password
+check wheather password matches with users registerd
+if p==pwd then print the message saying   welcome
+otherwise print an error message indicating that invalid password
+  if the entered username doesnot exists in users_dict  print username is invalid
+ 9.if the entered option is 3.then break the loop using break statement
+ 10.End the program
