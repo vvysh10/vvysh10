@@ -1,0 +1,65 @@
+cart={}
+while True:
+    print("1.Add product")
+    print("2.update product")
+    print("3.Delete product")
+    print("4.search")
+    print("5.view cart")
+    print("6.Exit")
+    opt=int(input("Enter your option"))
+    if opt==1:
+        pname=input("Product Name")
+        if pname in cart:
+            print(pname,"Exists in cart")
+        else:
+            qty=int(input("Enter qty"))
+            cart[pname]=qty
+            print("product added..")
+    elif opt==2:
+        pname=input("Product Name")
+        if pname in cart:
+            qty=int(input("Enter qty"))
+            cart[pname]=qty
+            print(pname,"product updated")
+        else:
+            print(pname,"product not exists in cart")
+    elif opt==3:
+         pname=input("enter productname")
+        if pname in cart:
+            del cart[pname]
+            print(pname,"deleted from cart")
+        else:
+            print(pname,"product doesnot exists in cart")
+    elif opt==4:
+        pname=input("enter product name)
+        if pname in cart:
+            qty=cart[pname]
+            print("qty is",qty)
+        else:
+            print("product not exists")
+    elif opt==5:
+        for pname,qty in cart.items():
+            print(pname,qty)
+    elif opt==6:
+        break
+        
+    
+    
+    
+    ALGORITHM:
+    1.initize an empty dictionary called "cart" to store products and quantities.
+    2.start the infinite loop that will continue until user enter to exit
+    3.print the menu options for the user to enter the option
+    4.prompt the user to enter for the option from the menu
+    5.if the option=1: then prompt the user to enter for the product name(paname),if pname is in cart then print a message called "pname already exists"
+    otherwise prompt the user the quantity of the product and store it in cart as product-qty pair
+    and print a messge product added..
+    6.if the user enters opt==2: prompt the user to enter for the product name, if the product present in the encourage the user to enter the quantity of the product
+    and update the quantity of the product and print a message that product got updated.otherwise print a message that product doesnot exist in cart.
+    7.if the user enter the opt==3:,prompt the user to enter for the product name if the product name is in the cart ,then delete the product using "del" keyword
+    and update as the product got deleted otherwise print a message called product doesnot exist  in cart
+    8.if the user option is opt==4,prompt the user to enter for the product name,if product name is in cart,then retrive the quantity of the product from cart dictionary
+    and print a message of product quantity otherwise print a message product doesnot exist on cart dictionary
+    9.if the user entered option is opt==5: then iterate over the items of cart dictionary and print product name corresponding to its quantity.
+    10.if the user enters opt==6:break the loop and end the program
+    11.after the loop ends ,the program will terminate.
