@@ -26,3 +26,26 @@ print(stud_dict)
 
 #with compresion
 same has programmed using comprehension.
+
+
+#create a student dictionary with rollno as key and name ,2 subjects as values
+
+
+n=int(input("enter how many studenrs"))
+stud_dict={int(input("enter rollno:")):[input("enter name"),int(input("enter sub1:")),int(input("enter sub2"))]for i in range(n)}
+for name,l in stud_dict.items():
+    print(name,l)
+
+#Algorithm:
+1.The user is promoted to enter the number of students to store in variable n.
+2.An Empty dictionary is created called "stud_dict" to store the student information,
+3.initiate a loop for an range of "n",using loop variable i.
+4.for each iteration of the loop ,perform the following steps:
+  i)prompt the user to enter for student rollno to store in a variable roll no.
+  ii)prompt the user to enter for the student name to store it in a variable called name.
+  iii)prompt the user to enter marks of the first subject to store in a variable sub1.
+  iv)prompt the user to enter marks of the second subject to store it in variable sub2.
+ 5.create a list to store the name,marks of the 2 subjects as value .
+ 6.Add list  to the dictionary as values to the key called rollno using syntax:stud_dict[rollno]=[name,sub1,sub2].
+ 7.initiate a loop to read the key value pair from stud_dict using name,l as variable
+ 8.Within Each iteration of the loop print name corresponding list of values(name,sub1,sub2)
