@@ -1,0 +1,28 @@
+#create a dictionary with rollno as key and name as value
+n=int(input("enter how many students"))
+stud_dict={}
+for i in range(n):
+    rollno=int(input("Enter student roll no"))
+    name=input("Enter student name")
+    stud_dict[rollno]=name
+print(stud_dict)
+
+
+
+#with comprehension
+stud_dict={int(input("enter rollno")):input("Enter name")for i in range(n)}
+print(stud_dict)
+
+
+#Algorithm:
+1.The user is prompted to enter the number of students to stored in variable 'n'.
+2.An empty dictionary is created to store the roll no as key and name as value.
+3.A loop is initiated  to iterate 'n' times,where i takes the values from (0 to n-1).
+4.for each iteration the user is prompted  to enter roll no which is stored in variable n.
+5.The user is prompted to enter his name which is stored in varible name.
+6.The roll no: and name are added to the dict "stud_dict" as key-value pair.
+7.finally after all iterations of the loop are complete,the dict is printed.
+
+
+#with compresion
+same has programmed using comprehension.
