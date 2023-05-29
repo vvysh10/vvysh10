@@ -1,0 +1,85 @@
+#Count occurrences of an element in a list
+n=int(input("Enter how many elements "))
+l1=[]
+c=0
+for i in range(n):
+    i=int(input("enter number"))
+    l1.append(i)
+print(l1)
+n1=int(input("enter any number"))
+for i in l1:
+    if n1==i
+        c=c+1
+print("The occurance of a  number",n1,":",c)
+
+
+#Algorithm::
+1.The user is promoted to enter the number of elements they want include in the list.
+2.An empty list is created to store the numbers.
+3.The variable c is initialized to "0" ,it is used to count the occurance of specified number.And then a loop is started to iterate upto "n" times,where n is promoted by user
+4.the user again promoted to enter the number to store on the list.
+5.The number then converted into iteger and store in the list l1.
+6.then the list is printed using output function.
+the user is encouage to enter the number for occurance "n1"
+7.Another loop is started ,iterating over each element inside the list "i"
+8.inside the loop,an if condition to check if a number "i" in list is equals to the user entered number i.e. "n1"
+9.if the condition is true ,then increment the variable c by "1".
+10.finally print the occurance of a user specified number by printing the counter variable c.
+
+
+
+#Find sum and average of List in Python
+l1=[1,2,3,4,5]
+s=0
+for i in l1:
+    s=s+i
+    i=i+1
+print(s)
+l1=len(l1)
+print(l1)
+avg=s/l1
+print(avg)
+
+
+#Algorithm::
+1.the lsit l1 is used to store the number that want to find sum and avaerage .
+2.The variable s is initialized to "0",which is used to store the value of sum of list.
+3.a loop is started to iterate over the elements "i" in the list l1.
+4.inside the loop,each element is added to the sum which is in shortend "s+=i".
+5.the loop has ends,the length of the list is stored in l1.
+6.The avaerage is calculated by dividing sum with the lenth of the list(l1)
+7.finally sum and average is printed using print function.
+
+
+
+#Sum of number digits in List
+n=int(input("Enter how many numbers"))
+l1=[]
+l2=[]
+for i in range(n):
+    i=int(input("enter any number"))
+    l1.append(i)
+    for ele in l1:
+        s1=0
+        for digit in str(ele):
+            s1+=int(digit)
+    l2.append(s1)
+print(l1)
+print(str(l2))
+
+
+#Algorithm::
+1.the user is promoted to enter how many numbers to include in the list.
+2. Two empty lists l1[],l2[] are created to enter the number enter by the user in l1,where another list is to store sum of the digits in the list
+3.a loop is started to iterate "n" where "n" value is specified by the user.
+4.Inside the loop,user is promoted to enter the number that need to be stored in the list l1.
+5.then later the number is converted into integer and added to the list
+6. inside the loop,another loop has started to iterate over the list l1.
+7.inside the nested loop the variable s1 is initialixed to "0",which is used to sum the digits of the current element.
+8.Another loop is started ,iterating over each digit in the element string representation
+     The str() function converts each number into a string,and the outer loop iterates each character in the string
+9.Inside the loop,each digit character converted back into integer using int(digit) ,and added to the sum " s1+=int(digit).
+10.After the inner loop ends,and the sum is added to the list l2
+11.then the outer loop gets ended,the lists l1,l2 are printed to display the numbers entered by user and crossponding to the sum of the digits of each number.
+
+
