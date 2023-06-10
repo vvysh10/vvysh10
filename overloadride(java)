@@ -1,0 +1,51 @@
+#Constructor Overloading
+
+class A
+{
+A()
+{
+System.out.println("CONSTRUCTOR WITHOUT ARGUMENTS");
+}
+A(int a)
+{
+System.out.println("CONSTRUCTOR WITH ARGUMENTS");
+}
+}
+class Coverload
+{
+public static void main(String args[])
+{
+A obj=new A();
+A obj1=new A(10);
+}
+}
+
+#Algorithm
+1.Start the program
+2.Define class A
+  a)Declare class A.
+  b)Define a constructor A() without any arguments
+    .print "CONSTRUCTOR WITHOUT ARGUMENTS"
+   Define another Constructor A(int a) with an integer argument.
+   .print "CONSTRUCTOR WITH ARGUMENTS
+ 3.Define class Coverload
+    a)Declare class Coverload
+    b)Define the Main Method
+        .start the execution of the main method
+      .Create an object obj of class A using default constructor A()
+        .invoke the constructor A() of class A
+        .Print "CONSTRUCTOR WITHOUT ARGUMENTS"
+      .Create an object obj1 of class A using constructor A(int a):
+        .invoke the constructor A(int a) of class A with the Argument 10.
+        .Print "CONSTRUCTOR WITH ARGUMENTS"
+      .End of Execution of the main method
+  4.End  the Program
+  
+  
+  Note:
+      The purpose of this program is to demostrate constructor Overloading in java
+      Constructor Overloading allows you to define multiple Constructors within a class with different arguments.
+      When an object is created ,the appropriate constructor is called based on the  arguments provided.
+       
+        
+   
