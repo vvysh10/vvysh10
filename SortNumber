@@ -1,0 +1,46 @@
+package com.prac;
+import java.util.ArrayList;
+import java.util.Collections;
+
+import java.util.Comparator;
+import java.util.List;
+
+
+public class SortNumber {
+
+	public static void main(String[] args) {
+		
+		
+		Comparator<Integer> com = new Comparator<Integer>()
+		{
+			public int compare(Integer i , Integer j) {
+				if(i%10 >j%10)
+					return 1;
+				else 
+					return -1;
+			}
+		};
+		
+           List<Integer> num = new ArrayList<>();
+           num.add(41);
+           num.add(18);
+           num.add(56);
+           num.add(60);
+           num.add(32);
+         Collections.sort(num,com);
+         System.out.println(num);
+	}
+
+}
+
+
+Algorithm::
+
+1.The Main Method is entry point of the program .Main method starts the Execution of a program.
+2.Inside the main method the custum comparator(user-defined comparator) is created to define a custom way to compare the two integer ,here the comparision is based on the last digit of numbers .
+3.The compare method is defined inside the custom comparator to compare the 2 integers based on their last digit of numbers which returns 1 or -1 based on their results.
+4.A list is created to hold the vales.
+5.the value are added to the list.
+6.The collections sort method is used to sort the list using the custom comparator.
+7.The Sorted list is then printed the console.
+  
